@@ -1,5 +1,10 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','','shop_db') or die('connection failed');
+$nameservice = "localhost";
+$user = "root";
+$pass = "";
+$db = "shop_db";
+$port = "3308";
+$con = new mysqli($nameservice,$user,$pass,$db,$port);
 
 ?>

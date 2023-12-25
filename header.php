@@ -9,7 +9,14 @@
             <a href="products.php">Ver Productos</a>
         </nav>
 
-        <a href="cart.php" class="carrito">carrito <span>0</span></a>
+        <?php
+
+        $select_rows = mysqli_query($con, "SELECT * FROM `cart`") or die('query failed');
+        $row_count = mysqli_num_rows($select_rows);
+
+        ?>
+
+        <a href="cart.php" class="carrito">carrito <span><?php echo $row_count; ?></span></a>
 
         <div id="menu-btn" class="fas fa-bars"></div>
 
