@@ -2,7 +2,7 @@
 
     <div class="flex">
 
-        <a href="#" class="logoC">Comida</a>
+        <a href="#" class="logoC">Lobitos Pizzeria</a>
 
         <nav class="navbar">
             <a href="admin.php">Agregar Productos</a>
@@ -16,7 +16,7 @@
 
         ?>
 
-        <a href="cart.php" class="carrito">carrito <span><?php echo $row_count; ?></span></a>
+        <a href="cart.php" class="carrito">Carrito <span><?php echo $row_count; ?></span></a>
 
         <div id="menu-btn" class="fas fa-bars"></div>
 
