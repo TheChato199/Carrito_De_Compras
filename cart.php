@@ -73,11 +73,11 @@ if(isset($_GET['delete_all'])){
                     <form action="" method="post">
                         <input type="hidden" name="update_cantidad_id"  value="<?php echo $fetch_cart['id']; ?>" >
                         <input type="number" name="update_cantidad" min="1"  value="<?php echo $fetch_cart['cantidad']; ?>" >
-                        <input type="submit" value="update" name="update_update_btn">
+                        <input type="submit" value="actualizar" name="update_update_btn">
                     </form>   
                 </td>
                 <td>$<?php echo $sub_total = number_format($fetch_cart['precio'] * $fetch_cart['cantidad']); ?>/-</td>
-                <td><a href="cart.php?remove=<?php echo $fetch_cart['id']; ?>" onclick="return confirm('¿Eliminar artículo del carrito?')" class="delete-btn"> <i class="fas fa-trash"></i> remove</a></td>
+                <td><a href="cart.php?remove=<?php echo $fetch_cart['id']; ?>" onclick="return confirm('¿Eliminar artículo del carrito?')" class="delete-btn"> <i class="fas fa-trash"></i> eliminar</a></td>
             </tr>
 
             <?php

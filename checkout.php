@@ -125,7 +125,7 @@ if(isset($_POST['order_btn'])){
             </div>
             <div class="inputBox">
                 <span>Direccion linea 2</span>
-                <input type="text" placeholder="e.g. street name" name="calle" required>
+                <input type="text" placeholder="e.g. nombre de calle" name="calle" required>
             </div>
             <div class="inputBox">
                 <span>Ciudad</span>
@@ -140,7 +140,7 @@ if(isset($_POST['order_btn'])){
                 <input type="text" placeholder="e.g. 123456s" name="pin_code" required>
             </div>
         </div>
-        <input type="submit" value="order now" name="order_btn" class="btn">
+        <input type="submit" value="Ordena Ahora" name="order_btn" class="btn">
     </form>
 </section>
 
